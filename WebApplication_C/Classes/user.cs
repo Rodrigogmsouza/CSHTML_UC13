@@ -16,7 +16,7 @@ namespace WebApplication_C.Classes
         public string cnpj { get; set; }
         public string nome { get; set; }
         public string email { get; set; }
-        public int telefone { get; set; }
+        public string telefone { get; set; }
     }
 
     public class cliente
@@ -24,7 +24,7 @@ namespace WebApplication_C.Classes
         public string cpf { get; set; }
         public string nome { get; set; }
         public string email { get; set; }
-        public int telefone { get; set; }
+        public string telefone { get; set; }
         public string endereco { get; set; }
     }
 }
