@@ -93,6 +93,7 @@ namespace WebApplication_C.Classes
             }
         }
 
+
         //Conta os estados
         public static int Count_Estado()
         {
