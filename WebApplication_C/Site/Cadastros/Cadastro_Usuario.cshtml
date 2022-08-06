@@ -1,4 +1,10 @@
-﻿<html lang="en">
+﻿@using WebApplication_C.Classes
+@{
+    BancoDeDados.DBConnect();
+    Registro_Usuario Usuario = new Registro_Usuario();
+}
+
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,15 +42,22 @@
         <article>
             <center>
                 <div class="txt">
-                    <label for="cpf">CPF</label><br>
-                    <input type="text" id="cpf" name="cpf"><br>
-                    <label for="senha">Senha</label><br>
-                    <input type="password" id="senha" name="senha"><br>
+                    <form method="post">
+                        <label for="cpf">CPF</label><br>
+                        <input type="text" id="cpf" name="cpf"><br>
+                        @{Usuario.cpf = Request.Form["cpf"]; }
+                        <label for="senha">Senha</label><br>
+                        <input type="password" id="senha" name="senha"><br>
+                        @{Usuario.senha = Request.Form["senha"];}
+                        <br>
+                        <br>
+                        <input type="submit" id="cadastrar" name="cadastrar"><br>
 
+
+                    </form>
                 </div>
-                <br>
-                <br>
-                <input type="submit" id="cadastrar" name="cadastrar"><br>
+                
+                
             </center>
 
         </article>
