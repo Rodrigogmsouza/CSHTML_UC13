@@ -1,0 +1,61 @@
+﻿.content {
+    flex: 1 0 auto;
+    -webkit-flex: 1 0 auto;
+    min-height: 200px;
+    float: left;
+    width: 300px;
+    background: #e1ad59;
+    background: linear-gradient(69deg,#e2b46a 0%, #5aa35e 100%);
+    padding: 50px;
+    margin: 20px;
+    border-radius: 25px;
+    color: white;
+    font-family: 'Roboco';
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .content {
+        width: 100%;
+    }
+}
+
+input[type=text] {
+    border: none;
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+input[type=password] {
+    border: none;
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #22c1c3;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 45px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    pointer-events: none;
+}

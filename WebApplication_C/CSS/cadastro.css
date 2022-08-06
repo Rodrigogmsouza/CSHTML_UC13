@@ -1,0 +1,46 @@
+﻿button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 45px;
+    padding: 12px 45px;
+    margin: 15px;
+    color: aliceblue;
+}
+
+    button:hover {
+        background: #22c1c3;
+    }
+
+    button:disabled {
+        background: #22c1c3;
+    }
+
+input[type=text] {
+    border: none;
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+input[type=password] {
+    border: none;
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+
+input[type=submit] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

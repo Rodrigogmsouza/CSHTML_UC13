@@ -1,0 +1,70 @@
+﻿<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/CSS/main.css">
+    <link rel="stylesheet" href="~/CSS/produtos.css">
+    <title>Somos Velozes - Produtos</title>
+</head>
+<body div class="bg">
+    <!--CABEÇALHO-->
+    <header>
+        <div class="header">
+            <a href="#default" class="logo">Somos Velozes</a>
+            <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+            <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+            <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+        </div>
+    </header>
+    <!--CORPO-->
+    <section>
+        <center>
+            <nav>
+                <button disabled>Cadastro</button>
+                <a href="~/Site/Produtos/Produto_Busca.cshtml">
+                    <button>Busca</button>
+                </a>
+                <a href="~/Site/Produtos/Produto_Alteracao.cshtml">
+                    <button>Alteração</button>
+                </a>
+            </nav>
+        </center>
+
+        <article>
+            <center>
+                <div class="txt">
+                    <label for="id_prod">ID do Produto</label><br>
+                    <input type="text" id="id_prod" name="id_prod"><br>
+                    <label for="id_prod">Nome do Produto</label><br>
+                    <input type="text" id="nome" name="nome"><br>
+                    <label for="id_prod">Marca do Produto</label><br>
+                    <input type="text" id="marca" name="marca"><br>
+                    <label for="id_prod">Distribuidor do Produto</label><br>
+                    <input type="text" id="distribuidor" name="distribuidor"><br>
+                    <label for="id_prod">Quantidade do Produto</label><br>
+                    <input type="text" id="quantidade" name="quantidade"><br>
+                    <label for="id_prod">Preço do Produto</label><br>
+                    <input type="text" id="preco" name="preco"><br>
+                    <label for="id_prod">Tipo do Produto</label><br>
+
+                </div>
+                <select name="Tipo do produto">
+                    <option value="val1"> </option>
+                    <option value="val2">Produto para consumo</option>
+                    <option value="val3">Matéria Prima</option>
+                    <option value="val4">Produto para industria</option>
+                </select> <br>
+                <br>
+                <br>
+                <input type="submit" id="cadastrar" name="cadastrar"><br>
+            </center>
+
+        </article>
+    </section>
+
+</body>
+</html>

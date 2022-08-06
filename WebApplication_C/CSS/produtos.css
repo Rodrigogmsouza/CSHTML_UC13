@@ -1,0 +1,137 @@
+﻿
+button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 45px;
+    padding: 12px 45px;
+    margin: 15px;
+    color: aliceblue;
+}
+
+    button:hover {
+        background: #22c1c3;
+    }
+
+    button:disabled {
+        background: #22c1c3;
+    }
+/*CADASTRO*/
+input[type=text] {
+    border: none;
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+select {
+    width: 30%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/*BUSCA*/
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+form {
+    border-radius: 25px;
+    border: 1px solid #d5d5d5;
+    margin: 0 auto;
+    max-width: 500px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pt-50 {
+    padding-top: 50px;
+}
+
+.form {
+    margin: 0 auto;
+    border-radius: 25px;
+    border: 1px solid #dadada;
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+.form-group, .form-register {
+    display: flex;
+    flex-direction: column;
+}
+
+    .form-group label {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    .form-group input[type="number"], .form-register input[type="text"], .form-register input[type="number"] {
+        border-radius: 25px;
+        border: 1px solid #c7c3c3;
+        height: 40px;
+        outline: 0;
+        color: #dadada;
+        font-size: 16px;
+        margin-bottom: 20px;
+        padding-left: 10px;
+    }
+
+.search-button {
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    background: #22c1c3;
+    background: linear-gradient(53deg, #22c1c3 0%, #fdbb2d 100%);
+    border-radius: 25px;
+    color: #dadada;
+    cursor: pointer;
+}
+
+.sectionList {
+    border-radius: 25px;
+    border-top: 1px solid #dadada;
+    margin: 20px;
+    padding-top: 20px;
+}
+
+.table {
+    width: 100%;
+    border-radius: 25px;
+    border: 2px solid #dadada;
+}
+
+    .table tr {
+        height: 40px;
+        border-radius: 25px;
+        border-top: 1px solid #dadada;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .table th {
+        font-weight: bold;
+        background: #22c1c3;
+        background: linear-gradient(53deg, #22c1c3 0%, #fdbb2d 100%);
+    }
+
+/*ALTERAÇÃO*/
+

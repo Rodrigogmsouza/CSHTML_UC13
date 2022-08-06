@@ -1,0 +1,64 @@
+﻿button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 45px;
+    padding: 12px 45px;
+    margin: 15px;
+    color: aliceblue;
+}
+
+    button:hover {
+        background: #22c1c3;
+    }
+
+    button:disabled {
+        background: #22c1c3;
+    }
+
+/*NOTA FISCAL & ENTREGA*/
+.pesquisa {
+    padding: 12px 20px;
+}
+
+input[type=text] {
+    position: relative;
+    left: 2%;
+    border: none;
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+label {
+    position: relative;
+    left: 2%;
+}
+
+.comprovante {
+    flex: 1 0 auto;
+    -webkit-flex: 1 0 auto;
+    min-height: 500px;
+    float: center;
+    width: 500px;
+    background: #e1ad59;
+    background: linear-gradient(69deg,#e2b46a 0%, #5aa35e 100%);
+    padding: 50px;
+    margin: 20px;
+    border-radius: 25px;
+    color: white;
+    font-family: 'Roboco';
+}
+
+    .comprovante img {
+        width: 100%;
+        height: auto;
+    }
+
+
+@media screen and (max-width: 600px) {
+    .comprovante {
+        width: 100%;
+    }
+}
