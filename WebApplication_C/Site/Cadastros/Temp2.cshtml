@@ -1,7 +1,12 @@
 ﻿@using WebApplication_C.Classes
 @{
     BancoDeDados.DBConnect();
-    cliente cliente = new cliente();
+    fornecedor fornecedor = new fornecedor();
+    fornecedor.cnpj = Request.Form["cnpj"];
+    fornecedor.nome = Request.Form["nome"];
+    fornecedor.email = Request.Form["email"];
+    fornecedor.telefone = Request.Form["telefone"];
+    BancoDeDados.Registro_Fornecedor(fornecedor);
 }
 
 <html lang="en">
@@ -30,10 +35,10 @@
     <section>
         <center>
             <nav>
-                <button disabled>Cliente</button>
-                <a href="~/Site/Cadastros/Cadastro_Fornecedor.cshtml">
-                    <button>Fornecedor</button>
+                <a href="~/Site/Cadastros/Cadastro_Cliente.cshtml">
+                    <button>Cliente</button>
                 </a>
+                <button disabled>Fornecedor</button>
                 <a href="~/Site/Cadastros/Cadastro_Usuario.cshtml">
                     <button>Usuário</button>
                 </a>
@@ -42,22 +47,21 @@
         <article>
             <center>
                 <div class="txt">
-                    <form method="post" action="~/Site/Cadastros/Temp3.cshtml">
-                    <label for="cpf">CPF</label><br>
-                    <input type="text" id="cpf" name="cpf"><br>
-                    <label for="nome">Nome do Cliente</label><br>
+                    <label for="cnpj">CNPJ</label><br>
+                    <input type="text" id="cnpj" name="cnpj"><br>
+                    <label for="nome">Nome do Fornecedor</label><br>
                     <input type="text" id="nome" name="nome"><br>
                     <label for="email">Email</label><br>
                     <input type="text" id="email" name="email"><br>
                     <label for="telefone">Telefone</label><br>
                     <input type="text" id="telefone" name="telefone"><br>
-                    <label for="endereco">Endereço</label><br>
-                    <input type="text" id="endereco" name="endereco"><br>
 
                 </div>
                 <br>
                 <br>
-                <input type="submit" id="cadastrar" name="cadastrar"><br></form>
+                <input type="submit" id="cadastrar" name="cadastrar"><br>
+
+                <h1>Fornecedor registrado com sucesso!!</h1>
             </center>
 
         </article>

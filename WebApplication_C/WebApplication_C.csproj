@@ -162,6 +162,8 @@
     <Content Include="Site\Menu\menu.cshtml" />
     <Content Include="web.config" />
     <Content Include="Site\Cadastros\Temp.cshtml" />
+    <Content Include="Site\Cadastros\Temp2.cshtml" />
+    <Content Include="Site\Cadastros\Temp3.cshtml" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>

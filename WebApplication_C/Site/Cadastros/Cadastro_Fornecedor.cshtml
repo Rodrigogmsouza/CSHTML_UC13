@@ -1,4 +1,10 @@
-﻿<html lang="en">
+﻿@using WebApplication_C.Classes
+@{
+    BancoDeDados.DBConnect();
+    fornecedor fornecedor = new fornecedor();
+}
+
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,19 +42,23 @@
         <article>
             <center>
                 <div class="txt">
-                    <label for="cnpj">CNPJ</label><br>
-                    <input type="text" id="cnpj" name="cnpj"><br>
-                    <label for="nome">Nome do Fornecedor</label><br>
-                    <input type="text" id="nome" name="nome"><br>
-                    <label for="email">Email</label><br>
-                    <input type="text" id="email" name="email"><br>
-                    <label for="telefone">Telefone</label><br>
-                    <input type="text" id="telefone" name="telefone"><br>
+                    <form method="post" action="~/Site/Cadastros/Temp2.cshtml">
+                        <label for="cnpj">CNPJ</label><br>
+                        <input type="text" id="cnpj" name="cnpj"><br>
+                        <label for="nome">Nome do Fornecedor</label><br>
+                        <input type="text" id="nome" name="nome"><br>
+                        <label for="email">Email</label><br>
+                        <input type="text" id="email" name="email"><br>
+                        <label for="telefone">Telefone</label><br>
+                        <input type="text" id="telefone" name="telefone"><br>
+                    </form>
 
                 </div>
                 <br>
                 <br>
-                <input type="submit" id="cadastrar" name="cadastrar"><br>
+                <input type="submit" id="cadastrar" name="cadastrar"><br></form>
+
+                
             </center>
 
         </article>

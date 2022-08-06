@@ -112,5 +112,38 @@ namespace WebApplication_C.Classes
             }
         }
 
+        public static void Registro_Fornecedor(fornecedor fornecedor)
+        {
+            string query = "INSERT INTO fornecedor(cnpj, nome, email, telefone) VALUES ('" + fornecedor.cnpj + "','" + fornecedor.nome + "','" + fornecedor.email + "','" + fornecedor.telefone + "')";
+            //open connection
+            if (OpenConnection() == true)
+            {
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+
+                //Execute command
+                cmd.ExecuteNonQuery();
+
+                //close connection
+                CloseConnection();
+            }
+        }
+
+        public static void Registro_Cliente(cliente cliente)
+        {
+            string query = "INSERT INTO cliente(cpf, nome, email, telefone, endereco) VALUES ('" + cliente.cpf + "','" + cliente.nome + "','" + cliente.email + "','" + cliente.telefone + "','" + cliente.endereco + "')";
+            //open connection
+            if (OpenConnection() == true)
+            {
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+
+                //Execute command
+                cmd.ExecuteNonQuery();
+
+                //close connection
+                CloseConnection();
+            }
+        }
     }
 }

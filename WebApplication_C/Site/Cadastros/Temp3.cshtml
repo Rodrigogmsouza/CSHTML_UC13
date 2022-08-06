@@ -2,8 +2,13 @@
 @{
     BancoDeDados.DBConnect();
     cliente cliente = new cliente();
+    cliente.cpf = Request.Form["cpf"];
+    cliente.nome = Request.Form["nome"];
+    cliente.email = Request.Form["email"];
+    cliente.telefone = Request.Form["telefone"];
+    cliente.endereco = Request.Form["endereco"];
+    BancoDeDados.Registro_Cliente(cliente);
 }
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -42,7 +47,6 @@
         <article>
             <center>
                 <div class="txt">
-                    <form method="post" action="~/Site/Cadastros/Temp3.cshtml">
                     <label for="cpf">CPF</label><br>
                     <input type="text" id="cpf" name="cpf"><br>
                     <label for="nome">Nome do Cliente</label><br>
@@ -57,7 +61,7 @@
                 </div>
                 <br>
                 <br>
-                <input type="submit" id="cadastrar" name="cadastrar"><br></form>
+                <input type="submit" id="cadastrar" name="cadastrar"><br>
             </center>
 
         </article>
