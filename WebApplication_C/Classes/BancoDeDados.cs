@@ -131,7 +131,7 @@ namespace WebApplication_C.Classes
 
         public static void Registro_Cliente(cliente cliente)
         {
-            string query = "INSERT INTO cliente(cpf, nome, email, telefone, endereco) VALUES ('" + cliente.cpf + "','" + cliente.nome + "','" + cliente.email + "','" + cliente.telefone + "','" + cliente.endereco + "')";
+            string query = "INSERT INTO cliente(cpf, nome, email, telefone, cep) VALUES ('" + cliente.cpf + "','" + cliente.nome + "','" + cliente.email + "','" + cliente.telefone + "','" + cliente.cep + "')";
             //open connection
             if (OpenConnection() == true)
             {
