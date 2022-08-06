@@ -137,7 +137,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\BancoDeDados.cs" />
-    <Compile Include="Classes\Registro_Usuario.cs" />
+    <Compile Include="Classes\user.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -161,6 +161,7 @@
     <Content Include="Site\Pagina\index.cshtml" />
     <Content Include="Site\Menu\menu.cshtml" />
     <Content Include="web.config" />
+    <Content Include="Site\Cadastros\Temp.cshtml" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>

@@ -26,7 +26,7 @@ namespace WebApplication_C.Classes
             //server = "localhost";
             server = "10.200.119.241";
             //database = "connectcsharptomysql";
-            database = "SENAI_DB";
+            database = "nathalia_rodrigo";
             //uid = "username";
             uid = "admin";
             //password = "password";
@@ -95,7 +95,7 @@ namespace WebApplication_C.Classes
 
         // REGISTRAR USUARIO
 
-        private static void Registrar_Usuario(Registro_Usuario Usuario)
+        public static void Registro_Usuario(user Usuario)
         {
             string query = "INSERT INTO usuario(cpf, senha) VALUES ('" + Usuario.cpf + "','" + Usuario.senha + "')";
             //open connection

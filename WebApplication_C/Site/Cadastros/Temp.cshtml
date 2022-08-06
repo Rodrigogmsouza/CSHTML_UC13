@@ -1,7 +1,9 @@
 ﻿@using WebApplication_C.Classes
 @{
-    BancoDeDados.DBConnect();
     user Usuario = new user();
+    Usuario.cpf = Request.Form["cpf"];
+    Usuario.senha = Request.Form["senha"];
+    BancoDeDados.Registro_Usuario(Usuario);
 }
 
 <html lang="en">
@@ -42,19 +44,18 @@
         <article>
             <center>
                 <div class="txt">
-                    <form method="post" action="~/Site/Cadastros/Temp.cshtml">
+                    <form method="post">
                         <label for="cpf">CPF</label><br>
                         <input type="text" id="cpf" name="cpf"><br>
-
                         <label for="senha">Senha</label><br>
                         <input type="password" id="senha" name="senha"><br>
-                        
                         <br>
                         <br>
                         <input type="submit" id="cadastrar" name="cadastrar"><br>
 
-
                     </form>
+                    
+                        <h1>conta registrada com sucesso!!</h1>
                 </div>
 
 
